@@ -27,7 +27,7 @@ https://www.digitalocean.com/community/tutorials/how-to-build-a-node-js-applicat
     docker build .
 
  <li>Docker vai construir uma imagem buscando do directory indicado com o (.) 
-e vai iniciar um container com a imagem criada no passo anterior rodando o cmd <p style="color:blue">docker run --name "dar um nome ao container(sem as aspas duplas)" -p "qual porta? Primeira porta é no seu host e a segunda é no container docker" 80:8080 -d "-d para cotinuar executando mesmo se fechar o terminal" e por ultimo qual sua imagem</p></li>
+e vai iniciar um container com a imagem criada no passo anterior rodando o cmd <p class="text-blue mb-2">docker run --name "dar um nome ao container(sem as aspas duplas)" -p "qual porta? Primeira porta é no seu host e a segunda é no container docker" 80:8080 -d "-d para cotinuar executando mesmo se fechar o terminal" e por ultimo qual sua imagem</p></li>
 
 #### Exemplo completo para o ultimo comando
 
