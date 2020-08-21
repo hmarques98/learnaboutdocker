@@ -1,10 +1,8 @@
 # Aprendendo usar o Docker
 
-### Passo a passo
+#### Passo a passo seguindo o tutorial no site da DigitalOcean
 
-#### Seguindo o tutorial no site da DigitalOcean
-
-https://www.digitalocean.com/community/tutorials/how-to-build-a-node-js-application-with-docker-on-ubuntu-20-04
+Segue o link: https://www.digitalocean.com/community/tutorials/how-to-build-a-node-js-application-with-docker-on-ubuntu-20-04
 
 #### Eu utilizo o Ubuntu 18.04 como OS
 
@@ -14,24 +12,36 @@ https://www.digitalocean.com/community/tutorials/how-to-build-a-node-js-applicat
 
 #### Eu segui todo o passo o passo sobre Docker do site, que foram esses a seguir.
 
-<li>Criar um arquivo <strong>Dockerfile</strong> e sua configuração</li><br/>
+_Para conseguir usar todos os passos abaixo é preciso ter o docker instalado em sua maquina. para isso só ir na documentação_
 
-<li>Criar um arquivo <strong>.dockerignore </strong> para ignorar pastas e não serem utilizadas/duplicadas. Como a pasta node_modules que já é recriada pelos cmd no Dockerfile.</li>
-<br/>
+---
 
-<li>Construir uma imagem com o Dockerfile rodando no terminal <strong>docker build . </strong> (com o ponto no final)
-</li>
+Documentação para instalação do docker com passo a passo para cada OS :
+https://docs.docker.com/engine/install/
+
+---
+
+Criar um arquivo **Dockerfile** e sua configuração
+
+Criar um arquivo **.dockerignore** para ignorar pastas e não serem utilizadas/duplicadas. Como a pasta node_modules que já é recriada pelos cmd no Dockerfile.
+
+Construir uma imagem com o Dockerfile rodando no terminal **docker build .** (com o ponto no final)
 
 ---
 
     docker build .
 
  <li>Docker vai construir uma imagem buscando do directory indicado com o (.) 
-e vai iniciar um container com a imagem criada no passo anterior rodando o cmd <p class="text-white bg-blue mb-2">docker run --name "dar um nome ao container(sem as aspas duplas)" -p "qual porta? Primeira porta é no seu host e a segunda é no container docker" 80:8080 -d "-d para cotinuar executando mesmo se fechar o terminal" e por ultimo qual sua imagem</p></li>
-
-#### Exemplo completo para o ultimo comando
+e vai iniciar um container com a imagem criada no passo anterior rodando o cmd</li>
 
 ---
+
+**_docker run --name "dar um nome ao container(sem as aspas duplas)
+" -p " qual porta? Primeira porta é no seu host e a segunda é no container docker ex: 80:8080
+" -d " -d para cotinuar executando mesmo se fechar o terminal"
+E por ultimo qual sua imagem_**
+
+#### Exemplo completo para o ultimo comando
 
     docker run --name nodejs-image -p 80:8080 -d nomedocontainer
 
@@ -60,3 +70,8 @@ e vai iniciar um container com a imagem criada no passo anterior rodando o cmd <
 #### Esse foi meu passo a passo em busca de aprender como utilizar o docker
 
 <p>Caso tenha algum erro de informção, pode fazer um pull request para me corrigir. Ficarei grato pela correção e atenção</p>
+
+Meus contatos:
+[![Linkedin Badge](https://img.shields.io/badge/-Henrique_Marques-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/hmarques98/)](https://www.linkedin.com/in/hmarques98/)
+[![GitHub Badge](https://img.shields.io/badge/-Henrique_Marques-black?style=flat-square&logo=GitHub&logoColor=white&link=https://www.linkedin.com/in/hmarques98/)](https://github.com/hmarques98)
+[![Outlook Badge](https://img.shields.io/badge/-Meu_Email-0AA6F0?style=flat-square&logo=GMail&logoColor=black&link=mailto:marquesprogrammer@hotmail.com)](mailto:marquesprogrammer@hotmail.com)
