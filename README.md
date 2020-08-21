@@ -14,13 +14,25 @@ https://www.digitalocean.com/community/tutorials/how-to-build-a-node-js-applicat
 
 #### Eu segui todo o passo o passo sobre Docker do site, que foram esses a seguir.
 
+<<<<<<< HEAD
 <li>Criar um arquivo <strong>Dockerfile</strong> e sua configuração</li><br/>
+=======
+        -- Criar um arquivo .dockerignore para ignorar pastas e não serem utilizadas/duplicadas. 
+        Como a pasta node_modules que já é recriada pelos cmd no Dockerfile.
+>>>>>>> 98fcd5b9e3976e63a7b6dd5e433b96eb025baf47
 
 <li>Criar um arquivo <strong>.dockerignore </strong> para ignorar pastas e não serem utilizadas/duplicadas. Como a pasta node_modules que já é recriada pelos cmd no Dockerfile.</li>
 <br/>
 
+<<<<<<< HEAD
 <li>Construir uma imagem com o Dockerfile rodando no terminal <strong>docker build . </strong> (com o ponto no final)
 </li>
+=======
+       Iniciar um container com a imagem criada no passo anterior rodando o cmd docker run --name "dar um nome ao container(sem as aspas duplas)" -p 
+        "qual porta? 
+        Primeira porta é no seu host e a segunda é no container docker" 80:8080 -d "-d para cotinuar executando mesmo se fechar o terminal" 
+        e por ultimo qual sua imagem
+>>>>>>> 98fcd5b9e3976e63a7b6dd5e433b96eb025baf47
 
 ---
 
