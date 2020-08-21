@@ -13,12 +13,16 @@
 
         -- Criar um arquivo Dockerfile e sua configuração
 
-        -- Criar um arquivo .dockerignore para ignorar pastas e não serem utilizadas/duplicadas. Como a pasta node_modules que já é recriada pelos cmd no Dockerfile.
+        -- Criar um arquivo .dockerignore para ignorar pastas e não serem utilizadas/duplicadas. 
+        Como a pasta node_modules que já é recriada pelos cmd no Dockerfile.
 
         -- Construir uma imagem com o Dockerfile rodando no terminal *docker build .*
             -- docker vai construir uma imagem buscando do directory indicado com o .
 
-        -- Iniciar um container com a imagem criada no passo anterior rodando o cmd *docker run --name "dar um nome ao container(sem as aspas duplas)" -p "qual porta? Primeira porta é no seu host e a segunda é no container docker" 80:8080 -d "-d para cotinuar executando mesmo se fechar o terminal" e por ultimo qual sua imagem*
+       Iniciar um container com a imagem criada no passo anterior rodando o cmd docker run --name "dar um nome ao container(sem as aspas duplas)" -p 
+        "qual porta? 
+        Primeira porta é no seu host e a segunda é no container docker" 80:8080 -d "-d para cotinuar executando mesmo se fechar o terminal" 
+        e por ultimo qual sua imagem
 
             -- exemplo completo para o ultimo comando
                 -- docker run --name nodejs-image -p 80:8080 -d nomedocontainer
